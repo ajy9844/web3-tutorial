@@ -229,7 +229,7 @@ export default function Home() {
       {currentAccount && (memos.map((memo, idx) => {
         return (
           <div key={idx} style={{ border: "2px solid", "borderRadius": "5px", padding: "5px", margin: "5px" }}>
-            <p style={{ "fontWeight": "bold" }}>"{memo.message}"</p>
+            <p style={{ "fontWeight": "bold" }}>&quot;{memo.message}&quot;</p>
             <p>From: {memo.name} at {memo.timestamp.toString()}</p>
           </div>
         )
@@ -241,7 +241,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Created by @thatguyintech for Alchemy's Road to Web3 lesson two!
+          Created by @thatguyintech for Alchemy&apos;s Road to Web3 lesson two!
         </a>
       </footer>
     </div>
